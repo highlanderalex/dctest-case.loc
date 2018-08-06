@@ -1,0 +1,16 @@
+﻿[2018-08_05 15:24:40] Текст ошибки: syntax error, unexpected 'return' (T_RETURN) | Фаил: D:\OpenServer\domains\dctest-case.loc\app\models\Order.php | Строка: 25
+********
+[2018-08_05 15:24:42] Текст ошибки: Page not found | Фаил: D:\OpenServer\domains\dctest-case.loc\core\Router.php | Строка: 52
+********
+[2018-08_05 15:24:47] Текст ошибки: syntax error, unexpected 'return' (T_RETURN) | Фаил: D:\OpenServer\domains\dctest-case.loc\app\models\Order.php | Строка: 25
+********
+[2018-08_05 15:29:15] Текст ошибки: Class not found app\controllers\BnController | Фаил: D:\OpenServer\domains\dctest-case.loc\core\Router.php | Строка: 47
+********
+[2018-08_05 16:40:28] Текст ошибки: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away | Фаил: D:\OpenServer\domains\dctest-case.loc\core\base\Model.php | Строка: 76
+********
+[2018-08_05 17:29:33] Текст ошибки: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away | Фаил: D:\OpenServer\domains\dctest-case.loc\core\base\Model.php | Строка: 76
+********
+[2018-08_05 17:29:34] Текст ошибки: Page not found | Фаил: D:\OpenServer\domains\dctest-case.loc\core\Router.php | Строка: 52
+********
+[2018-08_05 17:32:00] Текст ошибки: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dreamclouds.testclients' doesn't exist | Фаил: D:\OpenServer\domains\dctest-case.loc\core\base\Model.php | Строка: 76
+********

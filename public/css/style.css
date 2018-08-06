@@ -1,0 +1,403 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнул¤ем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {						/* устран¤ем отступы между ¤чейками таблицы */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+} 
+input, select, button, textarea {
+	margin: 0; 				/* убираем отступы по умолчанию дл¤ элементов форм (в частности дл¤ checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
+}
+input[type="text"], input[type="password"], textarea {
+	padding: 0; 				/* убираем внутренние отступы дл¤ текстовых полей */
+}
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+html {
+	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+	color: #606060;
+	text-align: left;
+	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+	min-height:100%;
+	font-family: 'Open Sans', sans-serif;
+}
+a, a:visited { /* пор¤док правил дл¤ ссылок имеет значение */
+	color: #339933;
+	text-decoration: underline;
+}
+a:hover {
+	color: #339933;
+	text-decoration:none;
+}
+a:focus, a:active {
+	color: #339933;
+	text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+
+	max-width:100%;
+}
+.clr{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+/* --------------- /базовые настройки ---------*/
+
+header{
+	background: #292929;
+	overflow: hidden;
+}
+
+header h2{
+	color: #fff;
+}
+
+.center-block-main{
+	max-width: 990px;
+	margin: 0 auto;
+}
+
+.logo{
+	float:left;
+	margin-top: 45px;
+	color: #fff;
+	font-size: 1.25em;
+}
+
+.menu{
+	float:right;
+}
+
+.menu li{
+	float: left;
+	font-weight: 600;
+}
+
+.menu li a{
+	color: #fff;
+	text-decoration: none;
+	padding: 50px 35px;
+	display: block;
+	border-bottom: 3px solid #292929;
+}
+
+.menu li a:hover{
+	color: #339933;
+	border-bottom: 3px solid #339933;
+}
+
+main{
+	/*margin-top: 20px;
+	float: left;*/
+	width: 100%;
+	min-height: 500px;
+	padding: 20px;
+}
+
+.content{
+	border-right:1px solid #e1e0e0;
+	border-left:1px solid #e1e0e0;
+}
+
+article{
+	margin-bottom: 70px;
+}
+
+article>header{
+	font-size: 0;
+	background: none;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.publish{
+	font-size: 13px;
+	background: rgba(0, 0, 0,0.6);
+	color: #fff;
+	position: absolute;
+	bottom: -60px;
+	padding: 10px 20px;
+	width:100%;
+	box-sizing: border-box;
+	-webkit-transition: bottom 0.1s linear;
+	-moz-transition: bottom 0.1s linear;
+	-o-transition: bottom 0.1s linear;
+	transition: bottom 0.1s linear;
+}
+article>header:hover .publish{
+	bottom: 0;
+}
+
+article>h2{
+	font-size: 1.75em;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 1.1;
+	margin: 0 0 40px 20px;
+	color: #4f4e4e;
+}
+
+article>p{
+	line-height: 1.1;
+	margin: 0 0 20px 20px;
+    text-indent: 20px;
+    text-align:justify;
+}
+
+a.more{
+	border: 2px solid #c2c2c2;
+	color: #c2c2c2;
+	padding:7px 20px;
+	display: inline-block;
+	border-radius: 20px;
+	text-decoration: none;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+
+a:hover.more{
+	border: 2px solid #339933;
+	color: #339933;
+}
+
+
+
+.subscribe-input{
+	color: #b9b9b9;
+	font-size: 1em;
+	width: 100%;
+	border: 1px solid #e1e0e0;
+	padding: 15px 50px 15px 20px;
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.subscribe{
+	width: 100%;
+	position: relative;
+	height: 48px;
+}
+
+.subscribe-image{
+	position: absolute;
+	right: 15px;
+	top: 12px;
+}
+
+
+
+footer{
+	background: #f8f8f8;
+	border-top: 1px solid #e1e0e0;
+	text-align: center;
+	font-size: 0.8em;
+	padding: 50px 0;
+}
+
+footer img{
+	margin-bottom:20px;
+}
+
+/* media query */
+
+@media screen and (max-width:768px){
+	aside{
+		margin-top: 10px;
+		float: none;
+		width: 100%;
+	}
+	main{
+		margin-top: 10px;
+		float: none;
+		width: 100%;
+	}
+	article>header img{
+		width: 100%;
+	}
+	
+	.logo{
+		margin-top: 20px;
+	}
+	
+	.menu li a{
+		padding: 20px 35px;
+	}
+}
+
+@media screen and (max-width:620px){
+	.logo{
+		float: none;
+		margin: 10px auto;
+		display: block;
+	}
+	.menu{
+		float: none;
+		width: 100%;
+	}
+	.menu li a{
+		padding: 10px 35px;
+	}
+}
+
+/*spinner*/
+#spinner{
+	background: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+
+}
+.loader {
+	border: 8px solid #f3f3f3; /* Light grey */
+	border-top: 8px solid #3498db; /* Blue */
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	animation: spin 2s linear infinite;
+	margin: 200px auto;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+/*end spinner*/
+
+/* modal alert*/
+/* The Modal (background) */
+.modal-alert {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+/* Modal Header */
+.alert-header {
+	padding: 2px 16px 16px 16px;
+	background-color: #ff4d4d;
+	color: white;
+}
+
+/* Modal Body */
+.alert-body {
+	padding: 60px;
+	color: #ff4d4d;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+
+/* Modal Content */
+.alert-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: 100px auto;
+	padding: 0;
+	border: 1px solid #888;
+	width: 40%;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	animation-name: animatetop;
+	animation-duration: 0.4s;
+}
+
+/* The Close Button */
+.alert-close {
+	color: #fff;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.alert-close:hover,
+.alert-close:focus {
+	color: #aaa;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+	from {top: -300px; opacity: 0}
+	to {top: 0; opacity: 1}
+}
+/* end alert */
+
+.debuger{
+	width: 100%;
+	background: #232323;
+	color: #ffffff;
+	padding: 20px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
+
+#result{
+	display: none;
+}
